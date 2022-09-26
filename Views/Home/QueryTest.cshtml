@@ -1,0 +1,39 @@
+@addTagHelper*, Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<Cliente>
+
+<body>
+    <form method="POST" asp-controller="Home" asp-action="QueryTest">
+        <span>Nome-Cliente:</span> <input type="text" name="NomeCliente" />
+        <input type="SUBMIT" value="Pesquisar" />
+        <br />
+        <br />
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <th>ClienteId</th>
+                <th>Cliente</th>
+                <th>TipoCliente</th>
+                <th>NomeContato</th>
+                <th>TelefoneContato</th>
+                <th>Cidade</th>
+                <th>Bairro</th>
+                <th>Logradouro</th>
+                <th>DataCadastro</th>
+                <th>DataAtualizacao</th>
+            </tr>
+            @foreach (Cliente item in Model)
+            {
+                <tr>
+                    <td>@item.ClienteId</td>
+                    <td>@item.Cliente1</td>
+                    <td>@item.NomeContato</td>
+                    <td>@item.TelefoneContato</td>
+                    <td>@item.Cidade</td>
+                    <td>@item.Bairro</td>
+                    <td>@item.Logradouro</td>
+                    <td>@item.DataCadastro</td>
+                    <td>@item.DataAtualizacao</td>
+                </tr>
+            }
+        </table>
+    </form>
+</body>

@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Gerenciamento_Clientes.Models;
 
 namespace Gerenciamento_Clientes.Controllers;
@@ -18,7 +19,17 @@ public class HomeController : Controller
         return View();
     }
 
-    
+    public IActionResult QueryTest()
+    {
+        using (var context = new DemoDbContext())
+        {
+            var resultado = context.Clientes.FromSqlInterpolated($"EXEC dbo.Selecionar").ToList();
+            return View(resultado);
+        }
+        // return View();
+    }
+
+
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
