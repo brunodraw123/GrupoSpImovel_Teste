@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj": {}
+    "C:\\Users\\Tatiane\\Desktop\\GrupoSPIMovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj": {
+    "C:\\Users\\Tatiane\\Desktop\\GrupoSPIMovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj",
+        "projectUniqueName": "C:\\Users\\Tatiane\\Desktop\\GrupoSPIMovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj",
         "projectName": "Gerenciamento_Clientes",
-        "projectPath": "C:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj",
+        "projectPath": "C:\\Users\\Tatiane\\Desktop\\GrupoSPIMovel\\Gerenciamento_Clientes\\Gerenciamento_Clientes.csproj",
         "packagesPath": "C:\\Users\\Tatiane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\obj\\",
+        "outputPath": "C:\\Users\\Tatiane\\Desktop\\GrupoSPIMovel\\Gerenciamento_Clientes\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tatiane\\AppData\\Roaming\\NuGet\\NuGet.Config",

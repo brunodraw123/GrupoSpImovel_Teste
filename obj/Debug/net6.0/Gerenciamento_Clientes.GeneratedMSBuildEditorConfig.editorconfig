@@ -8,37 +8,37 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gerenciamento_Clientes
 build_property.RootNamespace = Gerenciamento_Clientes
-build_property.ProjectDir = C:\Users\Tatiane\Desktop\GrupoSPImovel\Gerenciamento_Clientes\
+build_property.ProjectDir = C:\Users\Tatiane\Desktop\GrupoSPIMovel\Gerenciamento_Clientes\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Tatiane\Desktop\GrupoSPImovel\Gerenciamento_Clientes
+build_property.MSBuildProjectDirectory = C:\Users\Tatiane\Desktop\GrupoSPIMovel\Gerenciamento_Clientes
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/Home/Index.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/Home/QueryTest.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/Home/QueryTest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxRdWVyeVRlc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/Shared/Error.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/_ViewImports.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/_ViewStart.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Tatiane/Desktop/GrupoSPImovel/Gerenciamento_Clientes/Views/Shared/_Layout.cshtml]
+[C:/Users/Tatiane/Desktop/GrupoSPIMovel/Gerenciamento_Clientes/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6pom6hlfiv

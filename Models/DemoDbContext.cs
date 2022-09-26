@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-
+//criado a partir dos comandos do Entity Framework
 namespace Gerenciamento_Clientes.Models
 {
     public partial class DemoDbContext : DbContext
@@ -27,6 +27,7 @@ namespace Gerenciamento_Clientes.Models
             }
         }
 
+      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cliente>(entity =>

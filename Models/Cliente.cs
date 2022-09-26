@@ -5,6 +5,7 @@ namespace Gerenciamento_Clientes.Models
 {
     public partial class Cliente
     {
+        //Model criado a partir do modela de tabela do Banco de dados (Database First/ Egenharia Reversa EF)
         public int ClienteId { get; set; }
         public string Cliente1 { get; set; } = null!;
         public string TipoCliente { get; set; } = null!;
