@@ -16308,6 +16308,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\Views\\Home\\AlterModal.cshtml",
+      "TargetPath": "Views\\Home\\AlterModal.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Tatiane\\Desktop\\GrupoSPImovel\\Gerenciamento_Clientes\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

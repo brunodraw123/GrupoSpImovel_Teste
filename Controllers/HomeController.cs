@@ -25,6 +25,10 @@ public class HomeController : Controller
         }
         // return View();
     }
+    public PartialViewResult AlterModal()
+    {
+        return PartialView();
+    }
 
 
 

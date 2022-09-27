@@ -53,19 +53,30 @@
                     <td>@item.DataAtualizacao</td>
 
                     <td>
-                        <p><a href="#ex1" rel="modal:open">Editar</a></p>
+                        <p><a href="#modal" rel="modal:open" onclick="ExtrairId({@item.ClienteId})">Editar</a></p>
                     </td>
                 </tr>
             }
     </tbody>
 </table>
 
+<script>
+    //a href="#modal" 
+    function ExtrairId(var Id) {
+        var Id = 6;
+    return
+    (varid)
+        }
+</script>
 
-<!-- Modal HTML inserido diretamento no documento -->
-<div id="ex1" class="modal">
-    <p>Thanks for clicking. That felt good.</p>
+<div id="modal" class="modal">
+
+    <p> Hello!
+        <script> ExtrairId()</script>
+    </p>
     <a href="#" rel="modal:close">Close</a>
 </div>
+
 
 
 @section Scripts {
