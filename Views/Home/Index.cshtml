@@ -1,6 +1,15 @@
-﻿@{
+﻿@using System.Collections.Generic;
+@model List<Cliente>
+@{
     ViewData["Title"] = "Home Page";
 }
+
+<!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
 
 <div class="text-center">
     <p class="font-weight-bold">
@@ -8,3 +17,67 @@
         Sistema Gerenciador de Cadastros</h1>
     </p>
 </div>
+
+<br />
+
+<table id="tabela_id" class="table table-striped table-bordered dt-responsive nowrap" width="100%">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Cliente</th>
+            <th>Contato</th>
+            <th>Tipo</th>
+            <th>Número Celular</th>
+            <th>Cidade</th>
+            <th>Bairro</th>
+            <th>Logradouro</th>
+            <th>Cadastro</th>
+            <th>Última Atualização</th>
+            <th> + </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+            @foreach (Cliente item in Model)
+            {
+                <tr>
+                    <td>@item.ClienteId</td>
+                    <td>@item.Cliente1</td>
+                    <td>@item.NomeContato</td>
+                    <td>@item.TipoCliente</td>
+                    <td>@item.TelefoneContato</td>
+                    <td>@item.Cidade</td>
+                    <td>@item.Bairro</td>
+                    <td>@item.Logradouro</td>
+                    <td>@item.DataCadastro</td>
+                    <td>@item.DataAtualizacao</td>
+
+                    <td>
+                        <p><a href="#ex1" rel="modal:open">Editar</a></p>
+                    </td>
+                </tr>
+            }
+    </tbody>
+</table>
+
+
+<!-- Modal HTML inserido diretamento no documento -->
+<div id="ex1" class="modal">
+    <p>Thanks for clicking. That felt good.</p>
+    <a href="#" rel="modal:close">Close</a>
+</div>
+
+
+@section Scripts {
+<script> //manipulação do dom pelo função dataTable (Jquery)
+    $(document).ready(function () {
+        $('#tabela_id').DataTable(
+            {
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.10.15/i18n/Portuguese-Brasil.json'
+                }
+            }
+        );
+    });
+</script>
+}
