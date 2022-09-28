@@ -1,6 +1,12 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+
 using Gerenciamento_Clientes.Models;
 
 namespace Gerenciamento_Clientes.Controllers;
@@ -25,11 +31,15 @@ public class HomeController : Controller
         }
         // return View();
     }
-    public PartialViewResult AlterModal()
-    {
-        return PartialView();
-    }
 
+    public ActionResult Editar(int id)
+    {
+        DemoDbContext service = new DemoDbContext();
+        //Cliente clienteEncontrado = service.acharCliente(id);
+
+        var clienteEncontrado = service.Clientes.FirstOrDefault(c => c.ClienteId.Equals(id));
+        return PartialView(clienteEncontrado);
+    }
 
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

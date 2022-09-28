@@ -10,6 +10,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
+<!-- JS UI Tentative  -->
+<link href="~/Content/jquery-ui.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.theme.css" rel="stylesheet" />
+<script src="~/Scripts/jquery.js"></script>
+<script src="~/Scripts/jquery-ui.js"></script>
 
 <div class="text-center">
     <p class="font-weight-bold">
@@ -32,7 +37,7 @@
             <th>Bairro</th>
             <th>Logradouro</th>
             <th>Cadastro</th>
-            <th>Última Atualização</th>
+            <th> Atualização</th>
             <th> + </th>
         </tr>
     </thead>
@@ -41,7 +46,7 @@
             @foreach (Cliente item in Model)
             {
                 <tr>
-                    <td>@item.ClienteId</td>
+                    <td id="ClienteId">@item.ClienteId</td>
                     <td>@item.Cliente1</td>
                     <td>@item.NomeContato</td>
                     <td>@item.TipoCliente</td>
@@ -51,33 +56,62 @@
                     <td>@item.Logradouro</td>
                     <td>@item.DataCadastro</td>
                     <td>@item.DataAtualizacao</td>
-
                     <td>
-                        <p><a href="#modal" rel="modal:open" onclick="ExtrairId({@item.ClienteId})">Editar</a></p>
+
+                        <button id="btnEdit" data-Id=@item.ClienteId>
+                            Edit
+                        </button>
+                        <button id="btnDelete" data-Id=@item.ClienteId>
+                            Delete
+                        </button>
                     </td>
                 </tr>
             }
     </tbody>
 </table>
 
+<div id="modal">
+
+</div>
+
 <script>
-    //a href="#modal" 
-    function ExtrairId(var Id) {
-        var Id = 6;
-    return
-    (varid)
-        }
+    $(function () {
+        $("#btnEdit").click(function () {
+            var id = $(this).attr("data-Id");
+            $("#modal").load("/Views/Editar/" + id).attr("title", "Editar cliente").dialog();
+        });
+
+        $(".btnDelete").click(function () {
+            var codigo = $(this).attr("data-codigo");
+            $("#modal").load("/clientes/delete/" + codigo).attr("title", "Excluir cliente").dialog();
+        });
+    });
 </script>
 
-<div id="modal" class="modal">
+<!--<td>
+    <a id="#botaoEditar" href=#modal role="button" data-Id=item.ClienteId rel="modal:open">Editar</a>
 
-    <p> Hello!
-        <script> ExtrairId()</script>
+    </td>--->
+
+<!--
+<div id="modal" class="modal">
+    <p>
+    <div id="id2">
+        <script>
+            $('#modal').on('show.bs.modal', function (event) {
+                var button = $(event.relatedTarget); // Button that triggered the modal
+                var recipienteId = button.data('Id');
+                var modal = $(this);
+                modal.find('#id2').val(recipienteId);
+            })
+        </script>
+    </div>
+
+    Olá mundo
     </p>
     <a href="#" rel="modal:close">Close</a>
 </div>
-
-
+-->
 
 @section Scripts {
 <script> //manipulação do dom pelo função dataTable (Jquery)
